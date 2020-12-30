@@ -10,18 +10,17 @@
     * 전처리된 데이터는 다음과 같은 파이썬 리스트 형태로 저장된다.
     ```
     [
-     '프랑스의\t프랑스/Noun + 의/Josa\n',
-     '세계적\t세계적/Noun\n',
-     '인\t이/Adjective + ㄴ/Eomi\n',
-     '의상\t의상/Noun\n',
-     '디자이너\t디자이너/Noun\n',
-     '엠마누엘\t엠마누엘/Noun\n',
-     '웅가로가\t웅가로/Noun + 가/Josa\n',
-     '실내\t실내/Noun\n',
-     '장식용\t장식용/Noun\n',
-     '직물\t직물/Noun\n',
-     '디자이너로\t디자이너/Noun + 로/Josa\n',
-     '나섰다\t나서/Verb + 었다/Eomi\n',
+     '프랑스의\t프랑스/NNP + 의/JKG\n',
+     '세계적인\t세계/NNG + 적/XSN + 이/VCP + ㄴ/ETM\n',
+     '의상\t의상/NNG\n',
+     '디자이너\t디자이너/NNG\n',
+     '엠마누엘\t엠마누엘/NNP\n',
+     '웅가로가\t웅가로/NNP + 가/JKS\n',
+     '실내\t실내/NNG\n',
+     '장식용\t장식/NNG + 용/XSN\n',
+     '직물\t직물/NNG\n',
+     '디자이너로\t디자이너/NNG + 로/JKB\n',
+     '나섰다.\t나서/VV + 었/EP + 다/EF + ./SF\n',
      ...
      ]    
     ```
