@@ -10,7 +10,7 @@ parser = argparse.ArgumentParser(description="세종 말뭉치 품사/단어별 
 
 # Training argument
 parser.add_argument('--data_path', type=str, default='data/corpus_type1_all.txt')
-parser.add_argument('--num_lines', type=int, default=-1)
+parser.add_argument('--num_lines', type=int, default=0)
 parser.add_argument('--save_path', type=str, default='data/trained_corpus_type1.json')
 
 def _to_log_prob(pos2words, transition, bos):

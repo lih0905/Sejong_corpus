@@ -7,6 +7,7 @@ from soynlp.lemmatizer import lemma_candidate
 parser = argparse.ArgumentParser(description="세종 말뭉치 이용 품사 분석 입력")
 
 # argument
+parser.add_argument('--json_path', type=str, default='data/trained_corpus_type1.json')
 parser.add_argument('--text', type=str, required=True)
 
 def load_from_json(json_path):
@@ -279,9 +280,9 @@ class HMMTagger:
 if  __name__ == '__main__':
     args = parser.parse_args()
     text = args.text
-
-    JSON_PATH = 'data/trained_corpus_type1.json'
-    emission, transition, begin = load_from_json(JSON_PATH)
+    json_path = args.json_path
+    
+    emission, transition, begin = load_from_json(json_path)
 
     #print("transition", transition)
     hmm_tagger = HMMTagger(emission, transition, begin)

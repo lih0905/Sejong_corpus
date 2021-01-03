@@ -37,7 +37,7 @@
 * 세종 말뭉치 데이터를 이용하여 품사별 단어 빈도, 연이은 품사 발생 빈도, 시작 품사 빈도를 저장한다.
 ```bash
 python train.py --data_path 'data/corpus_type1_all.txt'
-                --num_lines -1
+                --num_lines 0
                 --json_path 'data/trained_corpus_type1.json'
 ```
 
